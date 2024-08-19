@@ -1,0 +1,22 @@
+import CardHorizontal from "@/components/CardHorizontal";
+
+const ProfileFriends = () => {
+  const user = {
+    name: "John Doe",
+    profilePicture: "https://via.placeholder.com/150", // Reemplaza con la URL real de la foto de perfil
+    buttonText: "Eliminar",
+  };
+
+  return (
+    <div className="flex flex-row flex-wrap content-start gap-5 overflow-x-scroll h-full">
+      <CardHorizontal data={user} />
+      <CardHorizontal data={user} />
+      <CardHorizontal data={user} />
+      <CardHorizontal data={user} />
+      <CardHorizontal data={user} />
+      <CardHorizontal data={user} />
+    </div>
+  );
+};
+
+export default ProfileFriends;
